@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Chapter</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+        li {
+            cursor: pointer;
+        }
+        #topic1, #topic2, #topic3, #topic4, #topic5 {
+            margin-top: 20px;
+        }
+        .topic {
+            display: none;
+        }
+        .target:target {
+            display: block;
+        }
+        .target {
+            position: relative;
+            margin-top: -80px; 
+            padding-top: 80px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 1: Introduction to Web Development</h1>
+    
+    <ol>
+        <li><a href="#topic1">What is Web Development?</a></li>
+        <li><a href="#topic2">History of the Web</a></li>
+        <li><a href="#topic3">HTML: The Structure of Web Pages</a></li>
+        <li><a href="#topic4">CSS: Styling Web Pages</a></li>
+        <li><a href="#topic5">JavaScript: Adding Interactivity</a></li>
+    </ol>
+
+    <p class="target" id="topic1">Web development encompasses the tasks involved in developing websites...</p>
+    <p class="target" id="topic2">The World Wide Web was invented by Sir Tim Berners-Lee in 1989...</p>
+    <p class="target" id="topic3">HTML (Hypertext Markup Language) is the standard markup language...</p>
+    <p class="target" id="topic4">CSS (Cascading Style Sheets) is a style sheet language used for describing...</p>
+    <p class="target" id="topic5">JavaScript is a programming language that enables interactive web pages...</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <titile>Timer</titile>
+    </head>
+    <body>
+        <h1>Timer</h1>
+        <p id="timer">0 seconds</p>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <script>
+            var timerInterval;
+            var startTime;
+            var elapasedTime=0;
+            function startTimer(){
+                startTime=new Date().getTime();
+                timerInterval=setInterval(updateTimer,1000);
+            }
+            function startTimer(){
+                clearInterval(timerInterval);
+            }
+            function updateTimer(){
+               var currentTime=new Date().getTime();
+               elapasedTime=Math.float((currentTime-startTime)/1000);
+                document.getElementById("timer").innerText=seconds+"second";
+            }
+        </script>
+    </body>
+</html>
